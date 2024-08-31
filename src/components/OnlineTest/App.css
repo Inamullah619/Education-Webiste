@@ -1,18 +1,64 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  /* height: 100%; */
+}
+
 .course-div {
-    padding: 20px;
-    margin: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    animation: fadeIn 2s ease-in-out;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  animation: fadeIn 2s ease-in-out;
+  width: 70%;
+  text-align: center;
+
+}
+
+.question-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.question-section .input {
+  display: flex;
+}
+
+.input input {
+  padding: 10px 10px;
+  width: 14rem;
+  outline: none;
+}
+
+.input button {
+  padding: 0 10px;
+  background-color: #1eb2a6;
+  outline: none;
+  border: 1px solid #1eb2a6;
+  color: #f0f0f0;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  .question-section {
-    margin-top: 20px;
+
+  100% {
+    opacity: 1;
   }
-  
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
+}
